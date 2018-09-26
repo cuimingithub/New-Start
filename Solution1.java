@@ -1,0 +1,27 @@
+package leetcode.solutuion;
+
+import java.util.Arrays;
+
+public class Solution1 {
+	
+	public static int[] twosum(int []nums,int target){
+		for (int i = 0; i < nums.length; i++) {
+	        for (int  j = i + 1; j < nums.length; j++) {
+	            if (nums[j] == target - nums[i]) {
+	               return new int []{i,j};
+	            }
+	        }
+	    }
+		throw new IllegalAccessError("no two solution");
+		}
+	
+	public static void main(String []args){
+	   int []nums={2,7,11,15};
+	   int target = 262;
+	   int []inum=twosum(nums,target);
+	   System.out.println(Arrays.toString(inum));
+		
+		
+	}
+
+}
